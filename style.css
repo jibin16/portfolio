@@ -1,0 +1,264 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: "Josefin Sans", sans-serif;
+}
+body{
+    
+    background-image: url("https://cdn.pixabay.com/photo/2023/06/17/13/37/computer-8070002_1280.jpg");
+    background-attachment: fixed;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+}
+header img{
+    margin-left: 10px;
+    height: 50px;
+}
+header ul {
+    display: flex;
+    justify-content: space-around;
+
+}
+header ul li{
+    margin: 20px;
+    list-style: none;
+}
+header ul li a{
+    text-decoration: none;
+    color: white;
+}
+header ul li a i{
+    margin: 4px;
+}
+header ul li a:hover{
+    text-shadow: 4px 3px 4px rgb(190, 149, 149);
+}
+
+ section ul{
+    justify-content: space-around;
+    margin-left: 150px;
+    font-size: 50px;
+ }
+ section ul li{
+    margin: 20px;
+    list-style: none;
+    color: white;
+   
+ }
+ section h1{
+    text-align: center;
+    margin-top: 300px;
+    color: white;
+    font-weight: 800;
+ }
+ .col1{
+    text-align: left;
+    font-size: medium;
+    text-align: justify;
+ }
+ .col1 p{
+    color: white;
+    font-size: large;
+    text-align: justify;
+    text-align: left;
+    margin-left: 600px;
+    /* padding: 50px; */
+ }
+ .col14 p{
+    color: white;
+ }
+ .col14 img{
+     float: left; 
+     width: 500px;
+     top: 80px;
+     height: 500px;
+     
+ }
+ h6{
+    color: white;
+    margin-left: 600px;
+ }
+ h5{
+    color: rgb(0, 0, 0);
+    margin-left: 600px;
+    font-size: larger;
+ }
+ h2{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: medium;
+ }
+ .row{
+    width: 100%;
+    height: 450px;
+    background-color: transparent;
+}
+.col{
+    width:250px ;
+    height:300px ;
+    background-color: white;
+    margin: 20px;
+    float: left;
+    box-shadow: 4px 5px 6px 8px rgb(0, 0, 0);
+    border-radius: 20px;
+    justify-content: space-around;
+    margin-left: 450px;
+}
+.col p{
+    text-align: center;
+}
+img{
+    width: 100px;
+    height: 100px;
+    border: 2px white;
+    padding:5px;
+    margin-left: 70px;
+}
+h3{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: medium;
+ }
+ .col2{
+    width:250px ;
+    height:350px ;
+    background-color: white;
+    margin: 20px;
+    float: left;
+    box-shadow: 4px 5px 6px 8px rgb(0, 0, 0);
+    border-radius: 20px;
+    justify-content: space-around;
+    margin-left: 180px;
+ }
+ .col2 p{
+    text-align: center;
+ }
+.col2 img{
+    width: 100px;
+    height: 100px;
+    border: 2px white;
+    padding:  20px;
+    margin-left: 60px;
+}
+.col5 h4{
+    color: white;
+    font-size: medium;
+    text-align: center;
+}
+#welcome{
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    color: white;
+    border: 4px double white;
+    padding: 50px;
+    background-color: rgb(155, 155, 155);
+}
+footer{
+    width: 100%;
+    height: 450px;
+    background-color: whitesmoke;
+}
+footer h1{
+    color: black;
+}
+.row3{
+    padding: 0%;
+    margin: 10px;
+}
+.flip-box {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-box-front, .flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+    border: 40px;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-box-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-box-back {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+  }
+  .col11{
+    padding: 20px;
+  }
+  footer h2{
+    color: black;
+  }
+  .col2:hover {
+    /* Start the shake animation and make the animation last for 0.5 seconds */
+    animation: shake 0.5s;
+  
+    /* When the animation is finished, start again */
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+  footer img{
+    width: 30px;
+    height: 30px;
+    margin-left: 80px;
+  }
+  .row3{
+    width: 800px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 100px;
+  }
